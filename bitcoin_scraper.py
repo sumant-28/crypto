@@ -13,7 +13,7 @@ def main():
   bitcoin_price = get_bitcoin_price()
   print(f"{current_time} - Bitcoin price: ${bitcoin_price}")
   
-  with open("bitcoin_prices.txt", "a") as file:
+  with open("/home/ec2-user/crypto/bitcoin_prices.txt", "a") as file:
     file.write(f"{current_time} - Bitcoin price: ${bitcoin_price}\n")
  
 if __name__ == "__main__":
